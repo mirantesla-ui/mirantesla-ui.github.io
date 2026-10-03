@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- NOVO: osnovna struktura HTML dokumenta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miran Tesla – Junior IT Support</title>
+
+<style>
+
+html {
+    scroll-behavior: smooth; /* NOVO: mehko drsenje do sekcij */
+}
+
+body {
+    background-color: #f4f6f8;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 40px 40px;
+}
+
+h1 {
+    color: #0253aa;
+    text-align: center;
+    border-bottom: 3px solid #0056b3;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #0056b3;
+    margin-top: 0;
+}
+
+.section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    scroll-margin-top: 70px; /* da navigacija ne prekrije naslova */
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* NOVO: Navigacija */
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #0056b3;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 16px;
+}
+
+nav a:hover {
+    background-color: #003d80;
+}
+
+/* Gumb */
+
+button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #003d80;
+}
+
+/* Skrito besedilo */
+
+#mehrText {
+    margin-top: 20px;
+}
+
+/* NOVO: Napredek (progress bar) */
+
+.fortschritt {
+    background-color: #dde3ea;
+    border-radius: 6px;
+    height: 22px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.balken {
+    background-color: #0056b3;
+    height: 100%;
+    width: 0;
+    transition: width 1s ease;
+}
+
+/* NOVO: Skupina tečajnih modulov */
+
+.kurs-module {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.kurs-module div {
+    border-left: 4px solid #0056b3;
+    padding-left: 12px;
+}
+
+.kurs-module h3 {
+    margin: 0 0 6px;
+    color: #0253aa;
+}
+
+/* NOVO: Projekti */
+
+.projekt {
+    border-left: 4px solid #0056b3;
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+.projekt h3 {
+    margin-bottom: 4px;
+}
+
+/* NOVO: Noga strani */
+
+footer {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    padding: 20px;
+}
+
+/* NOVO: Prilagoditev za mobilne telefone */
+
+@media (max-width: 600px) {
+    main {
+        padding: 10px 15px 30px;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NOVO: Navigacija -->
+<nav>
+    <ul>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#ueber-mich">Über mich</a></li>
+        <li><a href="#zertifikat">Zertifikat</a></li>
+        <li><a href="#projekte">Projekte</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<h1>Miran Tesla</h1>
+
+
+<div class="section" id="profil">
+
+    <h2>Profil</h2>
+
+    <p>
+        Junior IT Support | Google IT Support Zertifikat (in Ausbildung) | HTML & CSS Lernender
+    </p>
+
+    <p>
+        Wohnort: Feldkirch, Österreich
+    </p>
+
+</div>
+
+
+<div class="section" id="ueber-mich">
+
+    <h2>Über mich</h2>
+
+    <p>
+        Ich interessiere mich für IT-Support, Computerhardware,
+        Netzwerktechnik und Webentwicklung.
+        Derzeit erweitere ich meine Kenntnisse durch das
+        Google IT Support Professional Certificate und das
+        Erlernen von HTML und CSS.
+    </p>
+
+
+    <button id="mehrButton">Mehr über mich</button>
+
+
+    <div id="mehrText" style="display: none;">
+
+        <p>
+            Besonders interessant finde ich die praktische Arbeit
+            mit Computern, Betriebssystemen, Hardware und Netzwerken.
+            Ich möchte mein Wissen nicht nur theoretisch lernen,
+            sondern möglichst viel selbst ausprobieren und eigene
+            kleine Projekte entwickeln.
+        </p>
+
+        <p>
+            Mein Ziel ist es, meine Kenntnisse im IT-Bereich weiter
+            auszubauen und langfristig im IT-Support oder in einem
+            verwandten technischen Bereich zu arbeiten.
+        </p>
+
+
+        <h3>Meine Stärken</h3>
+
+        <ul>
+            <li>Technisches Interesse und Lernbereitschaft</li>
+            <li>Praktisches Arbeiten mit Computern</li>
+            <li>Interesse an Hardware und Netzwerken</li>
+            <li>Selbstständiges Lernen</li>
+            <li>Problemlösungsorientiertes Denken</li>
+            <li>Interesse an neuen Technologien</li>
+        </ul>
+
+
+        <!-- NOVO: Jeziki -->
+        <h3>Sprachen</h3>
+
+        <ul>
+            <li>Slowenisch – Muttersprache</li>
+            <li>Deutsch – B1+</li>
+            <li>Englisch – B1+</li>
+        </ul>
+
+    </div>
+
+</div>
+
+
+<!-- NOVO: Napredek certifikata -->
+<div class="section" id="zertifikat">
+
+    <h2>Google IT Support Professional Certificate</h2>
+
+    <p>Fortschritt: Kurs 5 von 6</p>
+
+    <div class="fortschritt">
+        <div class="balken" data-prozent="83"></div>
+    </div>
+
+    <p>
+        Das Zertifikat besteht aus sechs Kursen. Die Inhalte, die ich
+        bisher gelernt habe:
+    </p>
+
+    <!-- Vsi moduli so zdaj združeni v eno sekcijo -->
+    <div class="kurs-module">
+
+        <div>
+            <h3>Einführung in den IT-Support</h3>
+            <ul>
+                <li>Grundlagen der Informationstechnologie</li>
+                <li>Aufgaben eines IT-Support-Spezialisten</li>
+                <li>IT-Karrierewege und Entwicklungsmöglichkeiten</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Geschichte der Informatik</h3>
+            <ul>
+                <li>Von den ersten Rechenmaschinen bis zu modernen Computern</li>
+                <li>Pioniere der Computertechnik</li>
+                <li>Technologischer Fortschritt in der IT</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Digitale Logik</h3>
+            <ul>
+                <li>Binärsystem</li>
+                <li>Logische Gatter</li>
+                <li>Zeichenkodierung</li>
+                <li>Datenverarbeitung im Computer</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Computerarchitektur</h3>
+            <ul>
+                <li>Aufbau eines Computers</li>
+                <li>Zusammenspiel von Hardware und Software</li>
+                <li>Grundlagen der Computerarchitektur</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Hardware und Komponenten</h3>
+            <ul>
+                <li>CPU und Arbeitsspeicher (RAM)</li>
+                <li>Mainboards</li>
+                <li>SSD- und HDD-Speicher</li>
+                <li>Netzteile</li>
+                <li>Mobile Geräte und Peripheriegeräte</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Betriebssysteme</h3>
+            <ul>
+                <li>Windows 10 und Windows 11</li>
+                <li>Linux Ubuntu</li>
+                <li>ChromeOS und macOS</li>
+                <li>Dateisysteme</li>
+                <li>Boot-Prozess und Prozessverwaltung</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Netzwerktechnik</h3>
+            <ul>
+                <li>Grundlagen von Netzwerken</li>
+                <li>TCP/IP-Protokoll</li>
+                <li>Netzwerkhardware</li>
+                <li>Internet und Web-Technologien</li>
+                <li>Datenschutz und Sicherheit</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Software</h3>
+            <ul>
+                <li>Grundlagen von Programmierung und Skripting</li>
+                <li>Softwareentwicklung</li>
+                <li>Software-Versionierung</li>
+                <li>Abstraktion in der Softwareentwicklung</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- NOVO: Projekti -->
+<div class="section" id="projekte">
+
+    <h2>Projekte</h2>
+
+    <div class="projekt">
+        <h3>MiranLab – meine IT-Lernumgebung</h3>
+        <p>
+            Ein Lenovo ThinkPad T14 Gen 3, den ich als eigene
+            Übungsumgebung eingerichtet habe.
+        </p>
+        <ul>
+            <li>Windows 11 Pro, Microsoft 365, VS Code und Chrome</li>
+            <li>Ubuntu 26.04 LTS als virtuelle Maschine in VirtualBox</li>
+            <li>Cisco Packet Tracer für Netzwerkübungen</li>
+        </ul>
+    </div>
+
+    <div class="projekt">
+        <h3>Diese Webseite</h3>
+        <p>
+            Selbst geschrieben mit HTML, CSS und JavaScript –
+            mein erstes eigenes Webprojekt.
+        </p>
+    </div>
+
+</div>
+
+
+<div class="section">
+
+    <h2>Aktuelle Lernziele</h2>
+
+    <ul>
+        <li>HTML, CSS und JavaScript</li>
+        <li>Windows Administration</li>
+        <li>Netzwerktechnik</li>
+        <li>Python</li>
+        <li>Git und GitHub</li>
+        <li>WSL und Docker</li>
+    </ul>
+
+</div>
+
+
+<!-- NOVO: Kontakt -->
+<div class="section" id="kontakt">
+
+    <h2>Kontakt</h2>
+
+    <p>Telefon: <a href="tel:+436645794142">+43 664 579 4142</a></p>
+
+    <!-- Tukaj vpiši svoj e-mail naslov -->
+    <p>E-Mail: <a href="mailto:deine.email@beispiel.at">miran.tesla@gmail.com</a></p>
+
+</div>
+
+</main>
+
+
+<!-- NOVO: Noga strani -->
+<footer>
+    © <span id="jahr"></span> Miran Tesla – erstellt mit HTML, CSS und JavaScriptO
+</footer>
+
+
+<script>
+
+// Gumb "Mehr über mich"
+
+const button = document.getElementById("mehrButton");
+const text = document.getElementById("mehrText");
+
+button.addEventListener("click", function() {
+
+    if (text.style.display === "none") {
+
+        text.style.display = "block";
+        button.textContent = "Weniger anzeigen";
+
+    } else {
+
+        text.style.display = "none";
+        button.textContent = "Mehr über mich";
+
+    }
+
+});
+
+
+// NOVO: Letnica v nogi se posodobi sama
+
+document.getElementById("jahr").textContent = new Date().getFullYear();
+
+
+// NOVO: Progress bar se ob nalaganju strani napolni
+
+const balken = document.querySelector(".balken");
+
+window.addEventListener("load", function() {
+    balken.style.width = balken.dataset.prozent + "%";
+});
+
+</script>
+
+</body>
+</html>
