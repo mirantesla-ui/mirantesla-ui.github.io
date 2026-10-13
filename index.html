@@ -214,6 +214,55 @@ button:hover,
     border: 1px solid #dde3ea;
 }
 
+/* NOVO: Časovnica (Werdegang) */
+
+.zeitleiste {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    border-left: 3px solid #dde3ea;
+}
+
+.zeitleiste li {
+    position: relative;
+    padding: 0 0 18px 20px;
+    margin: 0;
+}
+
+.zeitleiste li::before {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #0056b3;
+    border: 3px solid white;
+}
+
+.zeitleiste .zeit {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+}
+
+.zeitleiste h3 {
+    margin: 2px 0 2px;
+    color: #0253aa;
+    font-size: 17px;
+}
+
+.zeitleiste .ort {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 4px;
+}
+
+.zeitleiste p {
+    margin: 0;
+}
+
 /* Noga strani */
 
 footer {
@@ -247,6 +296,7 @@ footer {
         <li><a href="#profil">Profil</a></li>
         <li><a href="#ueber-mich">Über mich</a></li>
         <li><a href="#kenntnisse">Kenntnisse</a></li>
+        <li><a href="#werdegang">Werdegang</a></li>
         <li><a href="#zertifikat">Zertifikat</a></li>
         <li><a href="#projekte">Projekte</a></li>
         <li><a href="#lernziele">Lernziele</a></li>
@@ -340,6 +390,8 @@ footer {
             <li>Slowenisch – Muttersprache</li>
             <li>Deutsch – B1+</li>
             <li>Englisch – B1+</li>
+            <li>Kroatisch – fließend</li>
+            <li>Serbisch – fließend</li>
         </ul>
 
     </div>
@@ -402,6 +454,101 @@ footer {
         </div>
 
     </div>
+
+</div>
+
+
+<!-- NOVO: Delovne izkušnje in izobrazba (iz CV-ja) -->
+<div class="section" id="werdegang">
+
+    <h2>Berufserfahrung</h2>
+
+    <p>
+        Über 25 Jahre Berufserfahrung in Logistik, Industrie, Sicherheit
+        und Sozialarbeit – in Österreich, Liechtenstein, der Schweiz,
+        Deutschland und Slowenien.
+    </p>
+
+    <ul class="zeitleiste">
+
+        <li>
+            <span class="zeit">11/2024 – 04/2026</span>
+            <h3>Sozialbetreuer – Caritas Notschlafstelle</h3>
+            <p class="ort">Feldkirch, Österreich</p>
+            <p>
+                Betreuung wohnungsloser Menschen, Kommunikation in schwierigen
+                Situationen, Dokumentation und Zusammenarbeit mit Behörden
+                und Sozialdiensten.
+            </p>
+        </li>
+
+        <li>
+            <span class="zeit">09/2022 – 06/2024</span>
+            <h3>Logistikmitarbeiter – Dietmar Kaiser und VAT</h3>
+            <p class="ort">Liechtenstein und Schweiz (teilweise über Job4You und das team AG)</p>
+            <p>
+                Lager- und Logistikarbeit in internationalen Industrieunternehmen.
+            </p>
+        </li>
+
+        <li>
+            <span class="zeit">2018 – 2022</span>
+            <h3>Logistikmitarbeiter – Hilti</h3>
+            <p class="ort">Österreich</p>
+            <p>
+                Mehrjährige Tätigkeit in der Logistik eines internationalen
+                Industrieunternehmens.
+            </p>
+        </li>
+
+        <li>
+            <span class="zeit">2012 – 2018</span>
+            <h3>Hausmeister und Gebäudereiniger</h3>
+            <p class="ort">Österreich und Deutschland</p>
+            <p>
+                Selbstständige Wartung und kleine Reparaturen in Gebäuden
+                und einem Hotel.
+            </p>
+        </li>
+
+        <li>
+            <span class="zeit">2003 – 2012</span>
+            <h3>Sicherheitsmitarbeiter – Sintal</h3>
+            <p class="ort">Slowenien</p>
+            <p>
+                Neun Jahre Verantwortung für Sicherheit und Ordnung –
+                zuverlässiges Arbeiten nach festen Abläufen.
+            </p>
+        </li>
+
+        <li>
+            <span class="zeit">1999 – 2002</span>
+            <h3>Autoverkäufer – Ford</h3>
+            <p class="ort">Slowenien</p>
+            <p>
+                Kundenberatung und Verkauf.
+            </p>
+        </li>
+
+    </ul>
+
+    <h2 style="margin-top: 20px;">Ausbildung</h2>
+
+    <ul class="zeitleiste">
+
+        <li>
+            <span class="zeit">seit 2026</span>
+            <h3>Google IT Support Professional Certificate</h3>
+            <p class="ort">Coursera · in Ausbildung</p>
+        </li>
+
+        <li>
+            <span class="zeit">1995 – 1998</span>
+            <h3>Berufsbildende Wirtschaftsschule – Bürokaufmann / Sekretariat</h3>
+            <p class="ort">Črnomelj, Slowenien · Abschluss</p>
+        </li>
+
+    </ul>
 
 </div>
 
@@ -574,9 +721,11 @@ footer {
         <li>Windows-Administration</li>
         <li>Netzwerktechnik vertiefen</li>
         <li>JavaScript</li>
-        <li>Python</li>
         <li>Git und GitHub</li>
-        <li>WSL und Docker</li>
+        <li>WSL (Linux unter Windows)</li>
+        <li>Active Directory und Benutzerverwaltung</li>
+        <li>Ticketsysteme im IT-Support</li>
+        <li>CompTIA A+ (in Vorbereitung)</li>
     </ul>
 
 </div>
