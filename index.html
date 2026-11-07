@@ -196,6 +196,17 @@ button:hover,
     color: #0253aa;
 }
 
+/* NOVO: opomba "se še učim" */
+
+.hinweis {
+    background-color: #fff8e6;
+    border-left: 4px solid #e0a800;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin: 0 0 16px;
+    font-size: 15px;
+}
+
 /* Projekti */
 
 .projekt {
@@ -268,6 +279,11 @@ footer {
         Angehender IT-Support-Techniker | Google IT Support Zertifikat (in Ausbildung) | Netzwerkgrundlagen | Windows &amp; Linux | Grundkenntnisse in HTML &amp; CSS
     </p>
 
+    <!-- NOVO: Quereinsteiger z izkušnjami -->
+    <p>
+        Quereinsteiger mit über 25 Jahren Berufserfahrung – davon 6 Jahre in der Logistik
+    </p>
+
     <p>
         Wohnort: Feldkirch, Österreich
     </p>
@@ -299,6 +315,14 @@ footer {
         Derzeit erweitere ich meine Kenntnisse durch das
         Google IT Support Professional Certificate und das
         Erlernen von HTML, CSS und JavaScript.
+    </p>
+
+    <!-- NOVO: delovne izkušnje -->
+    <p>
+        Ich bringe über 25 Jahre Berufserfahrung mit – unter anderem
+        6 Jahre in der Logistik (Lager, Stapler, SAP-Buchungen) und
+        zuletzt als Sozialbetreuer bei der Caritas in Feldkirch.
+        Jetzt orientiere ich mich Schritt für Schritt in Richtung IT-Support.
     </p>
 
 
@@ -338,8 +362,10 @@ footer {
 
         <ul>
             <li>Slowenisch – Muttersprache</li>
-            <li>Deutsch – B1+</li>
-            <li>Englisch – B1+</li>
+            <li>Deutsch – B1</li>
+            <li>Englisch – B2</li>
+            <li>Kroatisch – fließend</li>
+            <li>Serbisch – fließend</li>
         </ul>
 
     </div>
@@ -351,6 +377,13 @@ footer {
 <div class="section" id="kenntnisse">
 
     <h2>Technische Kenntnisse</h2>
+
+    <!-- NOVO: jasno, da gre za osnove, ki se jih še učim -->
+    <p class="hinweis">
+        Grundkenntnisse aus dem Google IT Support Kurs – praktisch geübt
+        in meiner eigenen Lernumgebung (MiranLab). Ich bin noch am Lernen
+        und vertiefe dieses Wissen laufend.
+    </p>
 
     <div class="skills">
 
@@ -393,6 +426,17 @@ footer {
             </div>
         </div>
 
+        <!-- NOVO: kurz 4 -->
+        <div>
+            <h3>Systemadministration (Grundlagen)</h3>
+            <div class="tags">
+                <span class="tag">Active Directory (Einführung)</span>
+                <span class="tag">Gruppenrichtlinien (Einführung)</span>
+                <span class="tag">DNS- &amp; DHCP-Server</span>
+                <span class="tag">Datensicherung &amp; Wiederherstellung</span>
+            </div>
+        </div>
+
         <div>
             <h3>Hardware</h3>
             <div class="tags">
@@ -425,10 +469,10 @@ footer {
     <!-- POPRAVLJENO: 3 končani kurzi od 6 = 50 %.
          Ko končaš kurz 4, spremeni na "4 von 6 ... Kurs 5 in Bearbeitung" in 67.
          Odstotki: 1 = 17, 2 = 33, 3 = 50, 4 = 67, 5 = 83, 6 = 100 -->
-    <p>Fortschritt: 3 von 6 Kursen abgeschlossen – Kurs 4 in Bearbeitung</p>
+    <p>Fortschritt: 4 von 6 Kursen abgeschlossen – Kurs 5 als Nächstes</p>
 
     <div class="fortschritt">
-        <div class="balken" data-prozent="50"></div>
+        <div class="balken" data-prozent="67"></div>
     </div>
 
     <!-- Povezave do certifikatov -->
@@ -443,6 +487,12 @@ footer {
     <p>
         ✅ Kurs 3 abgeschlossen: <strong>Operating Systems and You: Becoming a Power User</strong> (Oktober 2026) –
         <a href="https://coursera.org/verify/QPGGBKLG5V87" target="_blank" rel="noopener">Zertifikat ansehen</a>
+    </p>
+    <!-- NOVO: kurz 4. Zamenjaj VSTAVI-KODO s kodo iz svojega Coursera certifikata
+         (povezava oblike https://coursera.org/verify/XXXXXXXXXXXX). -->
+    <p>
+        ✅ Kurs 4 abgeschlossen: <strong>System Administration and IT Infrastructure Services</strong> (Oktober 2026) –
+        <a href="https://coursera.org/verify/VSTAVI-KODO" target="_blank" rel="noopener">Zertifikat ansehen</a>
     </p>
 
     <p>
@@ -660,6 +710,60 @@ footer {
 
     </div>
 
+    <!-- NOVO: vsebine kurza 4 -->
+    <p style="margin-top: 24px;">
+        Inhalte aus Kurs 4 „System Administration and IT Infrastructure Services“ (Einführung):
+    </p>
+
+    <div class="kurs-module">
+
+        <div>
+            <h3>Aufgaben der Systemadministration</h3>
+            <ul>
+                <li>Rolle des Systemadministrators</li>
+                <li>Server, Richtlinien und IT-Infrastruktur</li>
+                <li>Organisation und Dokumentation</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Infrastrukturdienste</h3>
+            <ul>
+                <li>DNS- und DHCP-Server</li>
+                <li>Virtualisierung und Cloud-Dienste</li>
+                <li>Fernzugriff und Dateidienste</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Software &amp; Plattformdienste</h3>
+            <ul>
+                <li>Kommunikations- und Bürosoftware</li>
+                <li>Web- und Datenbankserver</li>
+                <li>Fehlerbehebung bei Plattformdiensten</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Verzeichnisdienste</h3>
+            <ul>
+                <li>Active Directory – Grundlagen</li>
+                <li>Benutzer, Gruppen und Gruppenrichtlinien</li>
+                <li>LDAP und OpenLDAP – Einführung</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Datensicherung</h3>
+            <ul>
+                <li>Backup-Strategien</li>
+                <li>Wiederherstellung von Daten</li>
+                <li>Disaster-Recovery-Planung</li>
+            </ul>
+        </div>
+
+    </div>
+
 </div>
 
 
@@ -719,9 +823,10 @@ footer {
         <li>Windows-Administration</li>
         <li>Netzwerktechnik vertiefen</li>
         <li>JavaScript</li>
-        <li>Python</li>
         <li>Git und GitHub</li>
         <li>WSL und Docker</li>
+        <li>Automatisierung mit Make.com und n8n – erste Schritte</li>
+        <li>Später: Python</li>
     </ul>
 
 </div>
